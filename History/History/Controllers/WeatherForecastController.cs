@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Text;
 
 namespace History.Controllers
 {
@@ -30,6 +31,12 @@ namespace History.Controllers
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+
+        [HttpGet("GetGreetings")]
+        public async Task<string> GetGreetings()
+        {
+            return await Task.FromResult("Hello");
         }
     }
 }
