@@ -16,6 +16,7 @@ namespace History.Controllers
         private readonly ILogger<WeatherForecastController> _logger;
 
         private string password = "dfalkfldsawerwqr";
+        private string creds = "123e2hlihlhe32142";
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
             _logger = logger;
