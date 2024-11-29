@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace History.Controllers
@@ -13,6 +14,7 @@ namespace History.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
 
+        private string password = "dfalkfldsawerwqr";
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
             _logger = logger;
