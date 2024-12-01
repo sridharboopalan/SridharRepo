@@ -17,7 +17,7 @@ namespace History.Controllers
 
         private string password = string.Empty;
         private string creds = string.Empty;
-        private string key = string.Empty;
+        private string rename = string.Empty;
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
             _logger = logger;
